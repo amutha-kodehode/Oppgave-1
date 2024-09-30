@@ -43,15 +43,23 @@ Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
-number = number + 12; // can be written as number +=12';
-console.log(number);
-number++;
-console.log(number);
-++number;
-console.log(number);
+let addNumber = 5;
+addNumber = addNumber + 12;
+console.log(addNumber);
+addNumber += 12;
+console.log(addNumber);
+addNumber++;
+console.log(addNumber);
+++addNumber;
+console.log(addNumber);
 
-number *= 5;
-console.log("Multiplied Ex" + number);
+let multiplyNr = 6;
+multiplyNr *= 5;
+console.log("Multiplied Ex" + multiplyNr);
+
+let deleNr = 5;
+deleNr /= 2;
+console.log("Divided number " + deleNr);
 
 console.log(statement);
 // console.log(number);
@@ -79,8 +87,8 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
-let userAge = 18;
+let userName = "Amutha";
+let userAge = 30;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
