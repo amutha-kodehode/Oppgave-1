@@ -27,8 +27,14 @@ String, number, boolean, array
 You can choose what the actual content is.
 Try to use both the let and const keywords
 ******************************************************************************/
+const statement = "Sunday is the first day of a week";
+let number = 12;
+const floatNumber = 12.45;
+let negativeNumber = -54;
+let isWeekend = false;
+const weekend = ["Lørdag", "Søndag"]
 
-//your code here
+
 
 /****************************************************************************** 
 ASSIGNMENT 3
@@ -37,6 +43,22 @@ Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
+number = number + 12; // can be written as number +=12';
+console.log(number);
+number++;
+console.log(number);
+++number;
+console.log(number);
+
+number *= 5;
+console.log("Multiplied Ex" + number);
+
+console.log(statement);
+// console.log(number);
+console.log(floatNumber);
+negativeNumber--;
+console.log(negativeNumber);
+console.log(isWeekend);
 //your code here
 
 /****************************************************************************** 
@@ -62,7 +84,16 @@ let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
-
+if(userName !== "" && userAge > 18 && userIsBlocked ===false)
+{
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log("Welcome again. You are successfully logged in");
+}
+else
+{
+  console.log("User information not sufficient to log in");
+}
 //your code here
 
 /******************************************************************************
@@ -79,5 +110,6 @@ to see that your conditional is working.
 ******************************************************************************/
 
 const userMale = false;
-
+const userTitle = userMale ? "Mr." : "Mrs";
+console.log("Printing user title" + userTitle);
 //your code here
