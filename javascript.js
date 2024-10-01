@@ -92,7 +92,9 @@ let userAge = 30;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
-if(userName !== "" && userAge > 18 && userIsBlocked ===false)
+// if(userName !== "" && userAge > 18 && userIsBlocked ===false)
+// updating from feedback
+if (userName && userAge >= 18 && !userIsBlocked)
 {
   userIsLoggedIn = true;
   goToPage = "/home";
